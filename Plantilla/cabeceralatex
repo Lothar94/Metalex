@@ -1,0 +1,9 @@
+%{
+#include <stdio.h>
+FILE *fp;
+
+void negrita(char* texto);
+void cursiva(char* texto);
+%}
+
+%%

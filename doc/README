@@ -1,0 +1,61 @@
+Alumno: Lothar Soto Palma DNI: 49079173-W
+
+Mi programa usa los paquetes:
+
+	gcc/g++
+	pdfLatex
+	flex
+
+Es necesario tenerlos instalados para el correcto funcionamiento del mismo.
+
+Metalex es un programa sencillo que simplifica la busqueda de expresiones regulares en archivos, es decir, permite escribir cualquier expresión regular (en mi caso varias) y se evaluan las mismas con respecto al archivo introducido.
+Una vez introducida una primera busqueda, es posible generar un PDF con las palabras encontradas en Negrita o Cursiva o bien crear un archivo llamado out que contiene el archivo leido cuyas ocurrencias han sido modificadas por una palabra dada.
+
+Es posible algún error de memoria dinamica puesto que no esta perfilado completamente.
+
+
+Ejemplo de ejecución del programa:
+
+Introduzca el nombre del archivo a analizar: Lorem
+fexpr; Busca una expresion regular.
+rexpr; Reemplaza ocurrencias a partir de una expresion regular.
+genPDF; Generar PDF con enfasis.
+chfile; Cambiar el archivo analizado.
+exit; Salir.
+> fexpr
+Numero de expresiones regulares a buscar: 
+ > 1
+Escribe a continuacion la expresion regular: 
+ > [[:blank:]]e[a-z]*m[[:blank:]]
+ enim 
+ elementum 
+> rexpr
+Reemplazar por: Lothar
+> genPDF
+(N) Negrita o (C) cursiva?N
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian)
+ restricted \write18 enabled.
+entering extended mode
+(./salida.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu)
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu)))
+No file salida.aux.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./salida.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on salida.pdf (1 page, 28496 bytes).
+Transcript written on salida.log.
+> 
+
